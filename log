@@ -4,3 +4,16 @@ Wed 20 Mar 2024 01:19:11 AM UTC:
  tests:  2|3
 total_score: 20/70
 280a43c
+Wed 20 Mar 2024 01:26:09 AM UTC: 
+ exercises.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:3: error: unknown type name ‘Node’
+   64 |   Node* current = first(L);
+      |   ^~~~
+exercises.c:67:29: error: request for member ‘data’ in something not a structure or union
+   67 |       suma += *(int*)current->data;
+      |                             ^~
+Compilation failed
+f9f45b1
