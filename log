@@ -147,3 +147,19 @@ exercises.c:142:48: error: expected expression before ‘||’ token
       |                                                ^~
 Compilation failed
 29412b5
+Sat 23 Mar 2024 09:35:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:62: error: called object is not a function or function pointer
+  142 |           if(*dato == '[' && cadena[i] == ']') (*dato == '(' && cadena[i] == ')') (*dato == '{' && cadena[i] == '}')
+      |                                                ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:142:117: error: expected ‘;’ before ‘{’ token
+  142 |           if(*dato == '[' && cadena[i] == ']') (*dato == '(' && cadena[i] == ')') (*dato == '{' && cadena[i] == '}')
+      |                                                                                                                     ^
+      |                                                                                                                     ;
+  143 |             {
+      |             ~                                                                                                        
+Compilation failed
+684bb26
