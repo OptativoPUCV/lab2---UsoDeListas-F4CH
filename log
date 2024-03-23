@@ -77,3 +77,37 @@ Wed 20 Mar 2024 02:08:58 AM UTC:
  tests:  3|2
 total_score: 40/70
 c1a3f76
+Sat 23 Mar 2024 08:47:05 PM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:9: error: implicit declaration of function ‘size_stack’ [-Werror=implicit-function-declaration]
+  105 |   while(size_stack(P1) > 0)
+      |         ^~~~~~~~~~
+exercises.c:107:26: error: implicit declaration of function ‘top_stack’ [-Werror=implicit-function-declaration]
+  107 |       int top_elemento = top_stack(P1);
+      |                          ^~~~~~~~~
+exercises.c:108:7: error: implicit declaration of function ‘pop_stack’; did you mean ‘popBack’? [-Werror=implicit-function-declaration]
+  108 |       pop_stack(P1);
+      |       ^~~~~~~~~
+      |       popBack
+exercises.c:109:7: error: implicit declaration of function ‘push_stack’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+  109 |       push_stack(P2, top_elemento);
+      |       ^~~~~~~~~~
+      |       pushBack
+exercises.c:113:29: error: expected statement before ‘)’ token
+  113 |   while(size_stack(aux) > 0))
+      |                             ^
+exercises.c:114:24: error: implicit declaration of function ‘tope_stack’ [-Werror=implicit-function-declaration]
+  114 |     int top_elemento = tope_stack(aux);
+      |                        ^~~~~~~~~~
+exercises.c: At top level:
+exercises.c:119:1: error: data definition has no type or storage class [-Werror]
+  119 | destroy_stack(aux);
+      | ^~~~~~~~~~~~~
+exercises.c:119:1: error: type defaults to ‘int’ in declaration of ‘destroy_stack’ [-Werror=implicit-int]
+exercises.c:119:1: error: parameter names (without types) in function declaration [-Werror]
+cc1: all warnings being treated as errors
+Compilation failed
+d77a1dd
