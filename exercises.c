@@ -101,22 +101,22 @@ Puedes usar una pila auxiliar.
 
 void copia_pila(Stack* P1, Stack* P2) 
 {
-  Stack *aux = create_stack();
-  while(size_stack(P1) > 0)
+  Stack *pila_aux = create_stack();
+
+  while(top(P1) != NULL)
     {
-      int top_elemento = top_stack(P1);
-      pop_stack(P1);
-      push_stack(P2, top_elemento);
-      push_stack(aux, top_elemento);
+      int* elemento = top(P1);
+      push(pila_aux, elemento);
+      pop(P1);
     }
-
-  while(size_stack(aux) > 0))
-    int top_elemento = tope_stack(aux);
-    pop_stack(aux);
-    push_stack(P1, top_elemento);
+  while(top(pila_aux) != NULL))
+    {
+      int* elemento = top(pila_aux);
+      push(P1, elemento);
+      push(P2, elemento);
+      pop(pila_aux);
+    }
 }
-
-destroy_stack(aux);
 
 /*
 Ejercicio 5.
@@ -125,7 +125,8 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
+int parentesisBalanceados(char *cadena) 
+{
    return 0;
 }
 

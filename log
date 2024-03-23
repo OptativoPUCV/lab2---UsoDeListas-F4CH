@@ -111,3 +111,13 @@ exercises.c:119:1: error: parameter names (without types) in function declaratio
 cc1: all warnings being treated as errors
 Compilation failed
 d77a1dd
+Sat 23 Mar 2024 09:23:48 PM UTC: 
+ exercises.c | 29 +++++++++++++++--------------
+ 1 file changed, 15 insertions(+), 14 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:112:31: error: expected statement before ‘)’ token
+  112 |   while(top(pila_aux) != NULL))
+      |                               ^
+Compilation failed
+f0dc394
