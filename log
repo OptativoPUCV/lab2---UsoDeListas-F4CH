@@ -127,3 +127,13 @@ Sat 23 Mar 2024 09:23:56 PM UTC:
  tests:  4|1
 total_score: 50/70
 a8b7493
+Sat 23 Mar 2024 09:33:53 PM UTC: 
+ exercises.c | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:48: error: expected expression before ‘||’ token
+  142 |           if(*dato == '[' && cadena[i] == ']') || (*dato == '(' && cadena[i] == ')') || (*dato == '{' && cadena)
+      |                                                ^~
+Compilation failed
+53c03af
